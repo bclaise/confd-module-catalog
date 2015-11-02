@@ -1,0 +1,87 @@
+<organizations>
+  <organization xmlns="http://openconfig.net/yang/module-catalog" xmlns:y="http://tail-f.com/ns/rest"  xmlns:cat="http://openconfig.net/yang/module-catalog">
+    <name>ietf</name>
+    <type xmlns:cat-types="http://openconfig.net/yang/catalog-types">cat-types:standards</type>
+    <modules>
+      <module>
+        <name>ietf-interfaces</name>
+        <namespace>urn:ietf:params:xml:ns:yang:ietf-interfaces</namespace>
+        <prefix>if</prefix>
+        <revision>2014-05-08</revision>
+        <module-usage>
+          <access-uri>https://www.rfc-editor.org/rfc/rfc7223.txt</access-uri>
+        </module-usage>
+      </module>
+      <module>
+        <name>ietf-yang-types</name>
+        <namespace>urn:ietf:params:xml:ns:yang:ietf-yang-types</namespace>
+        <prefix>yang</prefix>
+        <revision>2013-07-15</revision>
+        <module-usage>
+          <access-uri>https://www.rfc-editor.org/rfc/rfc6991.txt</access-uri>
+        </module-usage>
+      </module>
+      <module>
+        <name>ietf-inet-types</name>
+        <namespace>urn:ietf:params:xml:ns:yang:ietf-inet-types</namespace>
+        <prefix>inet</prefix>
+      </module>
+      <module>
+        <name>ietf-netconf-monitoring</name>
+        <namespace>urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring</namespace>
+        <prefix>ncm</prefix>
+      </module>
+      <module>
+        <name>ietf-system</name>
+        <namespace>urn:ietf:params:xml:ns:yang:ietf-system</namespace>
+        <prefix>sys</prefix>
+      </module>
+      <module>
+        <name>ietf-complex-types</name>
+        <namespace>urn:ietf:params:xml:ns:yang:ietf-complex-types</namespace>
+        <prefix>ct</prefix>
+      </module>
+      <module>
+        <name>ietf-ipfix-psamp</name>
+        <namespace>urn:ietf:params:xml:ns:yang:ietf-ipfix-psamp</namespace>
+        <prefix>ipfix</prefix>
+      </module>
+      <module>
+        <name>ietf-netconf-acm</name>
+        <namespace>urn:ietf:params:xml:ns:yang:ietf-netconf-acm</namespace>
+        <prefix>nacm</prefix>
+      </module>
+      <module>
+        <name>ietf-netconf-notifications</name>
+        <namespace>urn:ietf:params:xml:ns:yang:ietf-netconf-notifications</namespace>
+        <prefix>ncn</prefix>
+      </module>
+      <module>
+        <name>ietf-yang-smiv2</name>
+        <namespace>urn:ietf:params:xml:ns:yang:ietf-yang-smiv2</namespace>
+        <prefix>smiv2</prefix>
+      </module>
+      <module>
+        <name>iana-if-type</name>
+        <namespace>urn:ietf:params:xml:ns:yang:iana-if-type</namespace>
+        <prefix>ianaift</prefix>
+      </module>
+      <module>
+        <name>ietf-interfaces</name>
+        <namespace>urn:ietf:params:xml:ns:yang:ietf-interfaces</namespace>
+        <prefix>if</prefix>
+      </module>
+        <name>ietf-x509-cert-to-name</name>
+        <namespace>urn:ietf:params:xml:ns:yang:ietf-x509-cert-to-name</namespace>
+        <prefix>x509c2n</prefix>
+      </module>
+      <module>
+        <name>ietf-snmp</name>
+        <namespace>urn:ietf:params:xml:ns:yang:ietf-snmp</namespace>
+        <prefix>snmp</prefix>
+      </module>
+    </modules>
+</organization>
+</organizations>
+
+
