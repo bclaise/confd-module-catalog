@@ -1,8 +1,7 @@
-<organizations>
-  <organization xmlns="http://openconfig.net/yang/module-catalog" xmlns:y="http://tail-f.com/ns/rest"  xmlns:cat="http://openconfig.net/yang/module-catalog">
-    <name>ietf</name>
-    <type xmlns:cat-types="http://openconfig.net/yang/catalog-types">cat-types:standards</type>
-    <modules>
+<organization xmlns="http://openconfig.net/yang/module-catalog" xmlns:y="http://tail-f.com/ns/rest"  xmlns:cat="http://openconfig.net/yang/module-catalog">
+  <name>ietf</name>
+  <type xmlns:cat-types="http://openconfig.net/yang/catalog-types">cat-types:standards</type>
+  <modules>
       <module>
         <name>ietf-interfaces</name>
         <namespace>urn:ietf:params:xml:ns:yang:ietf-interfaces</namespace>
@@ -71,6 +70,7 @@
         <namespace>urn:ietf:params:xml:ns:yang:ietf-interfaces</namespace>
         <prefix>if</prefix>
       </module>
+      <module>
         <name>ietf-x509-cert-to-name</name>
         <namespace>urn:ietf:params:xml:ns:yang:ietf-x509-cert-to-name</namespace>
         <prefix>x509c2n</prefix>
@@ -80,8 +80,7 @@
         <namespace>urn:ietf:params:xml:ns:yang:ietf-snmp</namespace>
         <prefix>snmp</prefix>
       </module>
-    </modules>
+  </modules>
 </organization>
-</organizations>
 
 
