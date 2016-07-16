@@ -1,9 +1,9 @@
 module openconfig-feature-bundle {
   // namespace
-  // TODO: change to an ietf or other more generic namespace
   namespace "http://openconfig.net/yang/feature-bundle";
-  prefix bundle;
-  import openconfig-module-catalog { prefix cat; }
+  prefix "oc-featbundle";
+  import openconfig-module-catalog { prefix oc-cat; }
+  import openconfig-extensions { prefix oc-ext; }
   // meta
   organization "OpenConfig working group";
   contact
@@ -11,19 +11,31 @@ module openconfig-feature-bundle {
     netopenconfig@googlegroups.com";
   description
     "This module can be used to build network features using
-    published YANG Models.";
+        published YANG Models.";
+  oc-ext:openconfig-version "0.2.0";
+  revision "2016-02-25" {
+    description
+      "OpenConfig revision to specify
+      feature bundles";
+    reference "0.2.0";
+  }
+  revision "2016-02-15" {
+    description
+      "Initial OpenConfig public release";
+    reference "0.1.0";
+  }
   revision "2015-10-18" {
     description
-      "Initial Revision";
+      "Initial revision";
     reference "TBD";
   }
-  grouping bundle-information {
-    description
-      "Template defining the bundle";
+  grouping feature-bundle-information {
+        description
+          "Template defining the bundle";
     leaf name {
         type string;
         description "Published name of bundle, for example:
-          l3vpn, l2vpn, internet-access";
+              l3vpn, l2vpn, internet-access";
     }
     leaf version {
         type string;
@@ -34,57 +46,68 @@ module openconfig-feature-bundle {
         description "User defined information about bundle";
     }
     leaf category {
-      type string;
-      description
+          type string;
+          description
        "Categorization of bundle such as:
         network, service, oam, experimental, other";
     }
     leaf subcategory {
-      type string;
-      description
-         "Sub-Categorization of bundle such as:
+          type string;
+          description
+             "Sub-Categorization of bundle such as:
           protocol, operational, other";
-    }
+        }
   } //bundle-template
-  grouping bundle-ingredients {
-    description "Module ingredients used in bundle";
+  grouping feature-bundle-ingredients {
+        description "Module ingredients used in bundle";
     container modules {
-      description
-        "Modules that comprise the bundle";
+          description
+            "Modules that comprise the bundle";
       list module {
         key "module-type";
         description
           "List of modules from yang-module-catalog comprising
            the bundle";
-        leaf module-type {
-            type string;
+            leaf module-type {
+                    type string;
           description
             "A user-define type of the module";
         }
         leaf catalog-reference {
           type leafref {
-           path "/cat:organizations"
-                 + "/cat:organization"
-                 + "/cat:modules"
-                 + "/cat:module"
-                 + "/cat:name";
-          }
-          description
-            "Link to a module defined by a standards body";
+            path "/oc-cat:organizations"
+              + "/oc-cat:organization"
+              + "/oc-cat:modules"
+              + "/oc-cat:module"
+              + "/oc-cat:name";
+                }
+              description
+            "Link to the module metadata in the model catalog";
         }
         leaf application-sequence {
            type uint8;
            description
-             "Sequence number indicating order of application of
+                 "Sequence number indicating order of application of
               module";
         }
       } //module-info
     } //bundle-modules
   } //bundle-ingredients
-  container bundle {
+  grouping feature-bundle-top {
     description
-      "Build the bundle";
-    uses bundle-information;
-    uses bundle-ingredients;
+      "Top-level grouping for OpenConfig feature bundles";
+    container feature-bundles {
+      description
+        "List of feature bundles";
+      list feature-bundle {
+        key "name";
+        description
+          "List of feature bundles - sets of modules that combine to
+          create a set of functionality.";
+        uses feature-bundle-information;
+        uses feature-bundle-ingredients;
+      }
+    }
   } //bundle
+  uses feature-bundle-top;
 }

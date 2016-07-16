@@ -1,6 +1,7 @@
 <organization xmlns="http://openconfig.net/yang/module-catalog" xmlns:y="http://tail-f.com/ns/rest"  xmlns:cat="http://openconfig.net/yang/module-catalog">
   <name>ietf</name>
-  <type xmlns:cat-types="http://openconfig.net/yang/catalog-types">cat-types:standards</type>
+  <!-- <type xmlns:oc-cat-types="http://openconfig.net/yang/catalog-types">oc-cat-types:IETF_TYPE_STANDARD</type> -->
+  <type xmlns:oc-cat-types="http://openconfig.net/yang/catalog-types">oc-cat-types:STANDARDS</type>
   <modules>
       <module>
         <name>ietf-interfaces</name>

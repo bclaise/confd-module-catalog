@@ -15,7 +15,7 @@ $(CONFD_DIR)/src/confd/build/include.mk:
 CONFD_FLAGS = --addloadpath $(CONFD_DIR)/etc/confd 
 START_FLAGS ?=
 
-all: openconfig-catalog-types.fxs openconfig-feature-bundle.fxs openconfig-module-catalog.fxs $(CDB_DIR) ssh-keydir
+all: openconfig-catalog-types.fxs openconfig-extensions.fxs openconfig-feature-bundle.fxs openconfig-module-catalog.fxs openconfig-release-bundle.fxs $(CDB_DIR) ssh-keydir
 	@echo "Build complete"
 
 clean:	iclean
@@ -23,6 +23,7 @@ clean:	iclean
 start:  stop start_confd
 
 start_confd:
-	$(CONFD) -c confd.conf $(CONFD_FLAGS)
+	$(CONFD) --foreground -v -c confd.conf $(CONFD_FLAGS)
+
 stop:
 	$(CONFD) --stop    || true

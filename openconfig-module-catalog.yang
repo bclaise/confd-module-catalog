@@ -2,10 +2,12 @@ module openconfig-module-catalog {
   yang-version "1";
   // namespace
   namespace "http://openconfig.net/yang/module-catalog";
-  prefix "cat";
+  prefix "oc-cat";
   // import some basic types
   import ietf-inet-types { prefix inet; }
-  import openconfig-catalog-types { prefix cat-types; }
+  import openconfig-catalog-types { prefix oc-cat-types; }
+  import openconfig-extensions { prefix oc-ext; }
+  import openconfig-release-bundle { prefix oc-relbundle; }
   // meta
   organization "OpenConfig working group";
   contact
@@ -14,6 +16,12 @@ module openconfig-module-catalog {
   description
     "This module provides a schema for cataloging and descrbing
     YANG models published across various organizations.";
+  oc-ext:openconfig-version "0.1.0";
+  revision "2016-02-15" {
+    description
+      "Initial OpenConfig public release";
+    reference "0.1.0";
+  }
   revision "2015-10-18" {
     description
       "Initial revision";
@@ -31,7 +39,7 @@ module openconfig-module-catalog {
       description
         "Container for module implementation information";
       list implementation {
-        key implementation-id;
+        key "implementation-id";
         description
           "List of available implementations, keyed by an identifier
           provided by either the implementor or the module
@@ -85,7 +93,7 @@ module openconfig-module-catalog {
         }
         leaf implementation-status {
           type identityref {
-            base cat-types:implementation-status-type;
+            base oc-cat-types:IMPLEMENTATION_STATUS_TYPE;
           }
           description
             "Indicates the status of the implementation, e.g.,
@@ -122,29 +130,29 @@ module openconfig-module-catalog {
     container classification {
       description
         "Container for data describing the module's classification";
-      leaf status {
+      leaf deployment-status {
         type identityref {
-          base cat-types:module-status-type;
+          base oc-cat-types:MODULE_STATUS_TYPE;
         }
         description
-          "Status of the module -- experimental, standards-track,
-          production, etc.";
+          "Deployment status of the module -- experimental,
+          standards-track, production, etc.";
       }
       leaf category {
         type identityref {
-          base cat-types:module-category-base;
+          base oc-cat-types:MODULE_CATEGORY_BASE;
         }
         description
            "Categorization of the module based on identities defined
-           by the publishing organizations.";
+           or used by the publishing organizations.";
       }
       leaf subcategory {
         type identityref {
-          base cat-types:module-subcategory-base;
+          base oc-cat-types:MODULE_SUBCATEGORY_BASE;
         }
         description
            "Sub-categorization of the module based on identities
-            defined by the publishing organizations.";
+            defined or used by the publishing organizations.";
       }
     }
   }
@@ -245,17 +253,17 @@ module openconfig-module-catalog {
     leaf name {
       type string;
       description
-        "Name of Organization defining YANG Module:"
-        + "Standards Body examples:"
-      + "   ietf, ieee, opendaylight, etc."
-      + "Commercial entity examples:"
-      + "   AT&T"
-      + "Name of industry forum examples:"
-    + "   openconfig, other";
+        "Name of Organization defining YANG Module:
+        Standards Body examples:
+          ietf, ieee, opendaylight, etc.
+        Commercial entity examples:
+          AT&T, Facebook
+        Name of industry forum examples:
+          openconfig, other";
     }
     leaf type {
       type identityref {
-        base cat-types:organization-type;
+        base oc-cat-types:ORGANIZATION_TYPE;
       }
       description
         "YANG modules publication authority";
@@ -277,26 +285,25 @@ module openconfig-module-catalog {
         description
           "List of organizations defining the YANG Modules";
         uses organization-information;
+        uses oc-relbundle:release-bundle-top;
         container modules {
           description
             "Modules published by this organization";
           list module {
-            key name;
+            key "name";
             description
               "List of published modules from the organization";
             uses module-base-information;
             uses module-classification-information;
             uses module-dependency-information;
             uses module-usage-information;
-            uses module-implementation-information;
           }
         }
       }
     }
+    uses module-implementation-information;
   }
   // data definition statements
   uses module-catalog-top;
   // augment statements
-  // rpc statements
-  // notification statements
 }
