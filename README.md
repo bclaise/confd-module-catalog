@@ -1,6 +1,9 @@
 # confd-module-catalog
 
-An example implementation of the [draft-openconfig-netmod-model-catalog](https://tools.ietf.org/html/draft-openconfig-netmod-model-catalog-00) using the Tail-f/Cisco [ConfD](http://www.tail-f.com/management-agent/) management agent.
+An example implementation of the [draft-openconfig-netmod-model-catalog](https://tools.ietf.org/html/draft-openconfig-netmod-model-catalog-01) using the Tail-f/Cisco [ConfD](https://developer.cisco.com/site/confD/downloads/) management agent.
+
+
+## Using a local install and Makefile
 
 You need a locally installed ConfD with appropriate northbound APIs (e.g. NETCONF, REST) enabled in the configuration. Start by sourcing the `confdrc` file in the top level ConfD installation into your environment:
 
@@ -31,3 +34,38 @@ To stop ConfD and reset the environment (clean the database):
 ```
 $ make stop clean
 ```
+
+## Using docker
+
+Make sure to have docker installed, then build the image using `docker build`. It should look something like:
+```
+$ docker build -t module-catalog .
+Sending build context to Docker daemon 59.05 MB
+[...]
+Successfully built e016a812c983
+$
+```
+
+Then run the image using `docker run` along the following lines:
+```
+$ docker run -P -d confd/0.3
+8b0b2d8fd1e83b36cea148f872a0ab09709db8362e6b4b40a8225a2d98bb090d
+$
+```
+
+The container should now be up and running with the web UI and NETCONF server exposed according to the Dockerfile
+```
+EXPOSE 8888
+EXPOSE 8008
+EXPOSE 2022
+EXPOSE 2024
+```
+
+Inspect the port mapping using the `docker ps -l` command:
+```
+$ docker ps -l
+CONTAINER ID        IMAGE               COMMAND                 CREATED             STATUS             PORTS                                                                                               NAMES
+8b0b2d8fd1e8        confd/0.3           "/usr/bin/make start"   23 seconds ago      Up 23 seconds       0.0.0.0:32778->2022/tcp, 0.0.0.0:32777->2024/tcp, 0.0.0.0:32776->8008/tcp, 0.0.0.0:32775->8888/tcp   nauseous_euler
+```
+
+In this case, the web UI is available on localhost, ports 32776 (no SSL) and 32775 (SSL). The NETCONF server is available on ports 32778 (SSH) and 32777 (TCP).
