@@ -1,5 +1,5 @@
 module openconfig-module-catalog {
-  yang-version "1";
+  yang-version "1.1";
   // namespace
   namespace "http://openconfig.net/yang/module-catalog";
   prefix "oc-cat";
@@ -109,10 +109,23 @@ module openconfig-module-catalog {
     container dependencies {
       description
         "Container for information about module dependencies";
-      leaf-list required-module {
-        type leafref {
-            path "../../name";
+      list required-module {
+        key "module-name module-revision";
+
+        leaf module-name {
+          type leafref {
+              path "../../../name";
+              require-instance false; // To avoid load ordering
+          }
         }
+
+        leaf module-revision {
+          type leafref {
+              path "../../../revision";
+              require-instance false; // To avoid load ordering
+          }
+        }
+
         description
           //TODO: should this list be complete, or only the first-
           //level dependencies?
@@ -236,11 +249,12 @@ module openconfig-module-catalog {
            on the hierarchy level of the sub-module";
       }
       leaf module-parent {
-        when "../module-hierarchy-level > '1'" {
+        when "../module-hierarchy-level > '0'" {
           description "Only applicable to sub-modules";
         }
         type leafref {
           path "../../name";
+          require-instance false; // To avoid load ordering
         }
         description
           "Parent module, if this is a sub-module";
@@ -290,18 +304,18 @@ module openconfig-module-catalog {
           description
             "Modules published by this organization";
           list module {
-            key "name";
+            key "name revision";
             description
               "List of published modules from the organization";
             uses module-base-information;
             uses module-classification-information;
             uses module-dependency-information;
             uses module-usage-information;
+            uses module-implementation-information;
           }
         }
       }
     }
-    uses module-implementation-information;
   }
   // data definition statements
   uses module-catalog-top;
