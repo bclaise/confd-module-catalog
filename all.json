@@ -1,0 +1,4045 @@
+{
+  "openconfig-module-catalog:organizations": {
+    "organization": [
+      {
+        "name": "ietf",
+        "modules": {
+          "module": [
+            {
+              "name": "ietf-5277-netconf",
+              "revision": "2016-06-15",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-5277-netconf",
+              "prefix": "notif",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-5277-netmod",
+              "revision": "2016-06-15",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-5277-netmod",
+              "prefix": "netmod-notif",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-access-control-list",
+              "revision": "2016-07-08",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-access-control-list",
+              "prefix": "acl",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-packet-fields",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-acl-dnsname",
+              "revision": "2016-01-14",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-acl-dnsname",
+              "prefix": "ietf-acl-dnsname",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-access-control-list",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-actn-vn",
+              "revision": "2016-07-05",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-actn-vn",
+              "prefix": "vn",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-te-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-address-pool",
+              "revision": "2015-10-14",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-address-pool",
+              "prefix": "address-pool",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-bfd",
+              "revision": "2016-07-04",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-bfd",
+              "prefix": "bfd",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-key-chain",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-network-instance",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-bfd-ip-mh",
+              "revision": "2016-07-04",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-bfd-ip-mh",
+              "prefix": "bfd-ip-mh",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-bfd",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-network-instance",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-bfd-ip-sh",
+              "revision": "2016-07-04",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-bfd-ip-sh",
+              "prefix": "bfd-ip-sh",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-bfd",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-network-instance",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-bfd-lag",
+              "revision": "2016-02-17",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-bfd-lag",
+              "prefix": "bfd-lag",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-bfd",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-bfd-mpls",
+              "revision": "2016-07-04",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-bfd-mpls",
+              "prefix": "bfd-mpls",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-bfd",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-network-instance",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-bfd-mpls-te",
+              "revision": "2016-02-04",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-bfd-mpls-te",
+              "prefix": "bfd-mpls-te",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-bfd",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-bfd-mpls",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-te",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-bgp",
+              "revision": "2016-01-06",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-bgp",
+              "prefix": "bgp",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-bgp-multiprotocol",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-bgp-operational",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-bgp-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-routing-policy",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-bgp-extensions",
+              "revision": "2016-07-08",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-bgp-extensions",
+              "prefix": "bgp-ext",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-bgp",
+                    "module-revision": "2016-01-06"
+                  },
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-bgp-l3vpn",
+              "revision": "2016-02-22",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-bgp-l3vpn",
+              "prefix": "l3vpn",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-bgp",
+                    "module-revision": "2016-01-06"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "2015-10-16"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-bgp-multiprotocol",
+              "revision": "2016-01-06",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-bgp-multiprotocol",
+              "prefix": "bgp-mp",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-bgp-operational",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-bgp-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-routing-policy",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-bgp-operational",
+              "revision": "2016-01-06",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-bgp-operational",
+              "prefix": "bgp-op",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-bgp-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-bgp-policy",
+              "revision": "2016-01-06",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-bgp-policy",
+              "prefix": "bgp-pol",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-bgp-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-policy-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-routing-policy",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-bgp-types",
+              "revision": "2016-01-06",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-bgp-types",
+              "prefix": "bgp-types",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-bier",
+              "revision": "2016-05-12",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-bier",
+              "prefix": "bier",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-isis",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-mpls",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-ospf",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-bier-te",
+              "revision": "2016-03-01",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-bier-te",
+              "prefix": "bier-te",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-complex-types",
+              "revision": "2011-03-15",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-complex-types",
+              "prefix": "ct"
+            },
+            {
+              "name": "ietf-conn-oam",
+              "revision": "2016-03-15",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-conn-oam",
+              "prefix": "goam",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-connectionless-oam",
+              "revision": "2015-12-22",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-connectionless-oam",
+              "prefix": "coam",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-network",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-packet-fields",
+                    "module-revision": "2015-06-11"
+                  },
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-cool",
+              "revision": "2016-01-01",
+              "namespace": "urn:ietf:ns:cool",
+              "prefix": "cool"
+            },
+            {
+              "name": "ietf-dhcpv6",
+              "revision": "2016-06-18",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-dhcpv6",
+              "prefix": "dhcpv6",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "2013-07-15"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "2013-07-15"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-diffserv",
+              "revision": "2016-03-03",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-diffserv",
+              "prefix": "diffserv",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-qos-action",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-qos-classifier",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-qos-policy",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-qos-target",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-dslite-aftr",
+              "revision": "2015-12-16",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-dslite-aftr",
+              "prefix": "dslite-aftr",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-entity",
+              "revision": "2016-05-13",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-entity",
+              "prefix": "ent",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-ethernet-segment",
+              "revision": "2016-07-08",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-ethernet-segment",
+              "prefix": "es",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-evpn",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-event-notifications",
+              "revision": "2016-06-15",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-event-notifications",
+              "prefix": "notif-bis",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-5277-netconf",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-5277-netmod",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-evpn",
+              "revision": "2016-07-08",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-evpn",
+              "prefix": "evpn",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-mpls",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-ext-xponder-wdm-if",
+              "revision": "2016-03-17",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-ext-xponder-wdm-if",
+              "prefix": "ietf-ext-xponder-wdm-if",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-fabric-topology",
+              "revision": "2016-04-13",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-fabric-topology",
+              "prefix": "fabric",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-fabric-types",
+                    "module-revision": "2016-02-26"
+                  },
+                  {
+                    "module-name": "ietf-network",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-network-topology",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-fabric-types",
+              "revision": "2016-02-26",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-fabric-types",
+              "prefix": "ftypes",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-network-topology",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "2013-07-15"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-fault",
+              "revision": "2016-06-22",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-fault",
+              "prefix": "flt",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-fault-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-fault-types",
+              "revision": "2016-06-22",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-fault-types",
+              "prefix": "flt-types"
+            },
+            {
+              "name": "ietf-fb-rib",
+              "revision": "2016-02-09",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-fb-rib",
+              "prefix": "fb-rib",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-fb-rib-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-fb-rib-types",
+              "revision": "2016-02-09",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-fb-rib-types",
+              "prefix": "fb-rib-t",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-pkt-eca-policy",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-flexi-grid-media-channel",
+              "revision": "2016-07-08",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-flexi-grid-media-channel",
+              "prefix": "fg-mc",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-flexi-grid-ted",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-flexi-grid-ted",
+              "revision": "2016-07-08",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-flexi-grid-ted",
+              "prefix": "fg-topo",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-network",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-network-topology",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-te-topology",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-flexible-encapsulation",
+              "revision": "2016-07-08",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-flexible-encapsulation",
+              "prefix": "flex",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "dot1q-tag-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces-common",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-foo",
+              "revision": "2016-03-20",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-foo",
+              "prefix": "foo"
+            },
+            {
+              "name": "ietf-gre",
+              "revision": "2015-07-02",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-gre",
+              "prefix": "gre",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-i2nsf-capability",
+              "revision": "2016-06-26",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-i2nsf-capability",
+              "prefix": "i2nsf-capability",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-pkt-eca-policy",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-i2nsf-capability-interface",
+              "revision": "2016-07-08",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-i2nsf-capability-interface",
+              "prefix": "capability-interface",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-i2rs-rib",
+              "revision": "2016-07-04",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-i2rs-rib",
+              "prefix": "iir",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-i2rs-service-topology",
+              "revision": "2016-02-12",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-i2rs-service-topology",
+              "prefix": "i2rs-st",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-network",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-network-topology",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-if-l3-vlan",
+              "revision": "2016-07-08",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-if-l3-vlan",
+              "prefix": "if-l3-vlan",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "dot1q-tag-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "iana-if-type",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces-common",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-igmp-mld",
+              "revision": "2016-03-01",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-igmp-mld",
+              "prefix": "igmp-mld",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-ip",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-ikev2",
+              "revision": "2016-03-10",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-ikev2",
+              "prefix": "ikev2",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-ikev2-crypto",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-ikev2-crypto",
+              "revision": "2016-02-26",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-ikev2-crypto",
+              "prefix": "ikev2-crypto"
+            },
+            {
+              "name": "ietf-inet-types",
+              "revision": "2010-09-24",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-inet-types",
+              "prefix": "inet"
+            },
+            {
+              "name": "ietf-inet-types",
+              "revision": "2013-07-15",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-inet-types",
+              "prefix": "inet"
+            },
+            {
+              "name": "ietf-interfaces",
+              "revision": "2014-05-08",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-interfaces",
+              "prefix": "if",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-interfaces-common",
+              "revision": "2016-07-07",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-interfaces-common",
+              "prefix": "if-cmn",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "iana-if-type",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-interfaces-ethernet-like",
+              "revision": "2016-07-07",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-interfaces-ethernet-like",
+              "prefix": "ethlike",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "iana-if-type",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-ip",
+              "revision": "2014-06-16",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-ip",
+              "prefix": "ip",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-ip-tunnel",
+              "revision": "2016-04-27",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-ip-tunnel",
+              "prefix": "iptnl",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "iana-if-type",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-ipfix-psamp",
+              "revision": "2012-09-05",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-ipfix-psamp",
+              "prefix": "ipfix",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-ipsec",
+              "revision": "2016-03-09",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-ipsec",
+              "prefix": "eipsec",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-ipv4-unicast-routing",
+              "revision": "2016-07-01",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-ipv4-unicast-routing",
+              "prefix": "v4ur",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-ipv6-router-advertisements",
+              "revision": "2016-07-01",
+              "module-hierarchy": {
+                "module-hierarchy-level": 1,
+                "module-parent": "ietf-ipv6-unicast-routing"
+              },
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-ip",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-ipv6-unicast-routing",
+              "revision": "2016-07-01",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-ipv6-unicast-routing",
+              "prefix": "v6ur",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-isis",
+              "revision": "2016-03-21",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-isis",
+              "prefix": "isis",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-routing-key-chain",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-isis-sr",
+              "revision": "2016-03-21",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-isis-sr",
+              "prefix": "isis-sr",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-isis",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-segment-routing",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-isis-topology",
+              "revision": "2016-06-12",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-isis-topology",
+              "prefix": "isis",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-l3-unicast-igp-topology",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-network",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-network-topology",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-key-chain",
+              "revision": "2016-06-28",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-key-chain",
+              "prefix": "key-chain",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-keyed-v6-tunnel",
+              "revision": "2016-03-21",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-keyed-v6-tunnel",
+              "prefix": "k6tun",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-l2-topology",
+              "revision": "2016-07-07",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-l2-topology",
+              "prefix": "l2t",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-network",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-network-topology",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-l2vpn",
+              "revision": "2016-05-31",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-l2vpn",
+              "prefix": "l2vpn",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-mpls",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-l3-te-topology",
+              "revision": "2016-06-15",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-l3-te-topology",
+              "prefix": "l3te",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-l3-unicast-igp-topology",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-network",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-network-topology",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-te-topology",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-l3-unicast-igp-topology",
+              "revision": "2016-06-12",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-l3-unicast-igp-topology",
+              "prefix": "l3t",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-network",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-network-topology",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-l3vpn-svc",
+              "revision": "2016-07-05",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-l3vpn-svc",
+              "prefix": "l3vpn-svc",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-lisp",
+              "revision": "2016-06-30",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-lisp",
+              "prefix": "lisp",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-lisp-address-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-lisp-address-types",
+              "revision": "2015-11-05",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-lisp-address-types",
+              "prefix": "laddr",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "2013-07-15"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "2013-07-15"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-lisp-etr",
+              "revision": "2016-06-30",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-lisp-etr",
+              "prefix": "lisp-etr",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-lisp",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-lisp-address-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-lisp-itr",
+              "revision": "2016-06-30",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-lisp-itr",
+              "prefix": "lisp-itr",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-lisp",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-lisp-address-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-lisp-mapresolver",
+              "revision": "2016-06-30",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-lisp-mapresolver",
+              "prefix": "lisp-mr",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-lisp",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-lisp-mapserver",
+              "revision": "2016-06-30",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-lisp-mapserver",
+              "prefix": "lisp-ms",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-lisp",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-lisp-address-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-lisp-petr",
+              "revision": "2016-06-30",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-lisp-petr",
+              "prefix": "lisp-petr",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-lisp",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-lisp-pitr",
+              "revision": "2016-06-30",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-lisp-pitr",
+              "prefix": "lisp-pitr",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-lisp",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-lisp-address-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-lmap-common",
+              "revision": "2016-07-07",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-lmap-common",
+              "prefix": "lmap",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-lmap-control",
+              "revision": "2016-07-07",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-lmap-control",
+              "prefix": "lmapc",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-lmap-common",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-netconf-acm",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-lmap-report",
+              "revision": "2016-07-07",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-lmap-report",
+              "prefix": "lmapr",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-lmap-common",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-logical-network-element",
+              "revision": "2016-06-23",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-logical-network-element",
+              "prefix": "lne",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-lora",
+              "revision": "2016-06-01",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-lora",
+              "prefix": "lora"
+            },
+            {
+              "name": "ietf-lspping",
+              "revision": "2016-03-18",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-lspping",
+              "prefix": "lspping",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-mount",
+              "revision": "2016-03-21",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-mount",
+              "prefix": "mnt",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-mpls",
+              "revision": "2016-07-05",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-mpls",
+              "prefix": "mpls",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-mpls-l2vpn-svc",
+              "revision": "2016-03-17",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-mpls-l2vpn-svc",
+              "prefix": "mpls-l2vpn-svc",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-mpls-ldp",
+              "revision": "2016-07-08",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-mpls-ldp",
+              "prefix": "ldp",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-ip",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-mpls",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-mpls-static",
+              "revision": "2016-07-05",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-mpls-static",
+              "prefix": "mpls-static",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-mpls",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-te",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-mpls-static-extended",
+              "revision": "2016-07-05",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-mpls-static-extended",
+              "prefix": "mpls-static-ext",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-mpls",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-mpls-static",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-mplstpoam",
+              "revision": "2015-07-02",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-mplstpoam",
+              "prefix": "mplstpoam",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-msdp",
+              "revision": "2016-07-06",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-msdp",
+              "prefix": "msdp",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-ip",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-key-chain",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-mud",
+              "revision": "2016-05-28",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-mud",
+              "prefix": "ietf-mud",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-access-control-list",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-multicast-service",
+              "revision": "2016-02-29",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-multicast-service",
+              "prefix": "multicast-service",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-mvpn",
+              "revision": "2016-07-08",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-mvpn",
+              "prefix": "mvpn",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-nat",
+              "revision": "2015-09-08",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-nat",
+              "prefix": "nat",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-netconf",
+              "revision": "2011-06-01",
+              "namespace": "urn:ietf:params:xml:ns:netconf:base:1.0",
+              "prefix": "nc",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-netconf-acm",
+              "revision": "2012-02-22",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-netconf-acm",
+              "prefix": "nacm",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-netconf-client",
+              "revision": "2016-07-08",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-netconf-client",
+              "prefix": "ncc",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-ssh-client",
+                    "module-revision": "2016-07-08"
+                  },
+                  {
+                    "module-name": "ietf-tls-client",
+                    "module-revision": "2016-07-08"
+                  },
+                  {
+                    "module-name": "ietf-x509-cert-to-name",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-netconf-monitoring",
+              "revision": "2010-10-04",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring",
+              "prefix": "ncm",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-netconf-notifications",
+              "revision": "2012-02-06",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-netconf-notifications",
+              "prefix": "ncn",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-netconf",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-netconf-opstate",
+              "revision": "2016-02-02",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-netconf-opstate",
+              "prefix": "ncos",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-netconf",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-patch",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-netconf-partial-lock",
+              "revision": "2009-10-19",
+              "namespace": "urn:ietf:params:xml:ns:netconf:partial-lock:1.0",
+              "prefix": "pl"
+            },
+            {
+              "name": "ietf-netconf-server",
+              "revision": "2016-03-16",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-netconf-server",
+              "prefix": "ncserver",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-ssh-server",
+                    "module-revision": "2016-03-16"
+                  },
+                  {
+                    "module-name": "ietf-tls-server",
+                    "module-revision": "2016-03-16"
+                  },
+                  {
+                    "module-name": "ietf-x509-cert-to-name",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-netconf-server",
+              "revision": "2016-07-08",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-netconf-server",
+              "prefix": "ncs",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-ssh-server",
+                    "module-revision": "2016-07-08"
+                  },
+                  {
+                    "module-name": "ietf-tls-server",
+                    "module-revision": "2016-07-08"
+                  },
+                  {
+                    "module-name": "ietf-x509-cert-to-name",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-netconf-time",
+              "revision": "2016-01-26",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-netconf-time",
+              "prefix": "nct",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-netconf",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-netconf-monitoring",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-netconf-with-defaults",
+              "revision": "2011-06-01",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-netconf-with-defaults",
+              "prefix": "ncwd",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-netconf",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-network",
+              "revision": "2016-07-08",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-network",
+              "prefix": "nd",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-network-device",
+              "revision": "2016-05-01",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-network-device",
+              "prefix": "nd"
+            },
+            {
+              "name": "ietf-network-instance",
+              "revision": "2016-06-23",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-network-instance",
+              "prefix": "ni",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-ip",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-network-topology",
+              "revision": "2016-07-08",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-network-topology",
+              "prefix": "lnk",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-network",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-odu-topology",
+              "revision": "2016-07-07",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-odu-topology",
+              "prefix": "l1topo",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-network",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-network-topology",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-te-topology",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-transport-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-opt-parameters-wdm",
+              "revision": "2016-03-11",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-opt-parameters-wdm",
+              "prefix": "iietf-opt-parameters-wdm",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "iana-if-type",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-ospf",
+              "revision": "2016-07-07",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-ospf",
+              "prefix": "ospf",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-key-chain",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-ospf-bfd",
+              "revision": "2016-07-07",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-ospf-bfd",
+              "prefix": "ospf-bfd",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-ospf",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-ospf-sr",
+              "revision": "2016-07-07",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-ospf-sr",
+              "prefix": "ospf-sr",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-ospf",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-segment-routing",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-ospf-topology",
+              "revision": "2016-06-12",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-ospf-topology",
+              "prefix": "ospf",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-l3-unicast-igp-topology",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-network",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-network-topology",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-otn-service",
+              "revision": "2016-06-24",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-otn-service",
+              "prefix": "otn-svc",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-te",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-transport-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "yang-ext",
+                    "module-revision": "2013-07-09"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-packet-fields",
+              "revision": "2016-07-08",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-packet-fields",
+              "prefix": "packet-fields",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-pcep",
+              "revision": "2016-07-07",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-pcep",
+              "prefix": "pcep",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-key-chain",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-te",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-pcp",
+              "revision": "2015-08-05",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-pcp",
+              "prefix": "pcp",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-pcp-client",
+              "revision": "2015-08-05",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-pcp-client",
+              "prefix": "pcp-client",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-pcp",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-pcp-iwf",
+              "revision": "2015-08-05",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-pcp-iwf",
+              "prefix": "pcp-iwf",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-pcp",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-pcp-proxy",
+              "revision": "2015-08-05",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-pcp-proxy",
+              "prefix": "pcp-proxy",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-pcp",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-pcp-server",
+              "revision": "2015-08-05",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-pcp-server",
+              "prefix": "pcp-server",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-pcp",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-pim-base",
+              "revision": "2016-03-18",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-pim-base",
+              "prefix": "pim-base",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-bfd",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-pim-bidir",
+              "revision": "2016-03-18",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-pim-bidir",
+              "prefix": "pim-bidir",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-pim-base",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-pim-rp",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-pim-dm",
+              "revision": "2016-03-18",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-pim-dm",
+              "prefix": "pim-dm",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-pim-base",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-pim-rp",
+              "revision": "2016-03-18",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-pim-rp",
+              "prefix": "pim-rp",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-pim-base",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-pim-sm",
+              "revision": "2016-03-18",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-pim-sm",
+              "prefix": "pim-sm",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-pim-base",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-pim-rp",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-pkt-eca-policy",
+              "revision": "2016-06-26",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-pkt-eca-policy",
+              "prefix": "pkt-eca-policy",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-i2rs-rib",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-pot-profile",
+              "revision": "2016-06-15",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-pot-profile",
+              "prefix": "ietf-pot-profile"
+            },
+            {
+              "name": "ietf-ptp-dataset",
+              "revision": "2015-11-10",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-ptp-dataset",
+              "prefix": "ptp-dataset"
+            },
+            {
+              "name": "ietf-pw",
+              "revision": "2016-03-30",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-pw",
+              "prefix": "pw",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-qos",
+              "revision": "2015-06-04",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-qos",
+              "prefix": "qos"
+            },
+            {
+              "name": "ietf-qos-action",
+              "revision": "2016-03-03",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-qos-action",
+              "prefix": "action",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-qos-classifier",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-qos-policy",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-qos-classifier",
+              "revision": "2016-03-03",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-qos-classifier",
+              "prefix": "classifier",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-qos-policy",
+              "revision": "2016-03-03",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-qos-policy",
+              "prefix": "policy",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-qos-classifier",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-qos-target",
+              "revision": "2016-03-03",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-qos-target",
+              "prefix": "target",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-qos-policy",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-restconf-client",
+              "revision": "2016-07-08",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-restconf-client",
+              "prefix": "rcc"
+            },
+            {
+              "name": "ietf-restconf-server",
+              "revision": "2016-03-16",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-restconf-server",
+              "prefix": "rcserver",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-tls-server",
+                    "module-revision": "2016-03-16"
+                  },
+                  {
+                    "module-name": "ietf-x509-cert-to-name",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-restconf-server",
+              "revision": "2016-07-08",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-restconf-server",
+              "prefix": "rcs",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-tls-server",
+                    "module-revision": "2016-07-08"
+                  },
+                  {
+                    "module-name": "ietf-x509-cert-to-name",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-rib-extension",
+              "revision": "2016-03-15",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-rib-extension",
+              "prefix": "rib",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-ipv4-unicast-routing",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-ipv6-unicast-routing",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-rip",
+              "revision": "2016-01-28",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-rip",
+              "prefix": "rip",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-bfd",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-ip",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-key-chain",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-ospf",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "routing-policy",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-routing",
+              "revision": "2016-07-01",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-routing",
+              "prefix": "rt",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-rsvp",
+              "revision": "2016-03-20",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-rsvp",
+              "prefix": "rsvp",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-rsvp-extended",
+              "revision": "2016-03-20",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-rsvp-extended",
+              "prefix": "rsvp-ext",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-rsvp",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-rsvp-te",
+              "revision": "2016-03-20",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-rsvp-te",
+              "prefix": "rsvp-te",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-rsvp",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-te",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-te-device",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-te-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-rsvp-te-mpls",
+              "revision": "2016-03-20",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-rsvp-te-mpls",
+              "prefix": "rsvp-te-mpls",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-rsvp",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-te",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-te-device",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-te-mpls-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-te-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-schedule",
+              "revision": "2016-03-01",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-schedule",
+              "prefix": "sch",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-segment-routing",
+              "revision": "2016-07-07",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-segment-routing",
+              "prefix": "sr",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-routing",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-sid-file",
+              "revision": "2015-12-16",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-sid-file",
+              "prefix": "sid"
+            },
+            {
+              "name": "ietf-snmp",
+              "revision": "2014-12-10",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-snmp",
+              "prefix": "snmp"
+            },
+            {
+              "name": "ietf-snmp-common",
+              "revision": "2014-12-10",
+              "module-hierarchy": {
+                "module-hierarchy-level": 1,
+                "module-parent": "ietf-snmp"
+              },
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-snmp-community",
+              "revision": "2014-12-10",
+              "module-hierarchy": {
+                "module-hierarchy-level": 1,
+                "module-parent": "ietf-snmp"
+              },
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-netconf-acm",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-snmp-engine",
+              "revision": "2014-12-10",
+              "module-hierarchy": {
+                "module-hierarchy-level": 1,
+                "module-parent": "ietf-snmp"
+              },
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-snmp-notification",
+              "revision": "2014-12-10",
+              "module-hierarchy": {
+                "module-hierarchy-level": 1,
+                "module-parent": "ietf-snmp"
+              }
+            },
+            {
+              "name": "ietf-snmp-proxy",
+              "revision": "2014-12-10",
+              "module-hierarchy": {
+                "module-hierarchy-level": 1,
+                "module-parent": "ietf-snmp"
+              }
+            },
+            {
+              "name": "ietf-snmp-ssh",
+              "revision": "2014-12-10",
+              "module-hierarchy": {
+                "module-hierarchy-level": 1,
+                "module-parent": "ietf-snmp"
+              },
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-snmp-target",
+              "revision": "2014-12-10",
+              "module-hierarchy": {
+                "module-hierarchy-level": 1,
+                "module-parent": "ietf-snmp"
+              },
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-snmp-tls",
+              "revision": "2014-12-10",
+              "module-hierarchy": {
+                "module-hierarchy-level": 1,
+                "module-parent": "ietf-snmp"
+              },
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-x509-cert-to-name",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-snmp-tsm",
+              "revision": "2014-12-10",
+              "module-hierarchy": {
+                "module-hierarchy-level": 1,
+                "module-parent": "ietf-snmp"
+              }
+            },
+            {
+              "name": "ietf-snmp-usm",
+              "revision": "2014-12-10",
+              "module-hierarchy": {
+                "module-hierarchy-level": 1,
+                "module-parent": "ietf-snmp"
+              },
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-netconf-acm",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-snmp-vacm",
+              "revision": "2014-12-10",
+              "module-hierarchy": {
+                "module-hierarchy-level": 1,
+                "module-parent": "ietf-snmp"
+              }
+            },
+            {
+              "name": "ietf-softwire",
+              "revision": "2016-06-04",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-softwire",
+              "prefix": "softwire",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-sr-topology",
+              "revision": "2016-06-24",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-sr-topology",
+              "prefix": "srt",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-l3-unicast-igp-topology",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-network",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-network-topology",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-segment-routing",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-ssh-client",
+              "revision": "2016-07-08",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-ssh-client",
+              "prefix": "sshc",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-system-keychain",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-ssh-server",
+              "revision": "2016-03-16",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-ssh-server",
+              "prefix": "ts",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-system-keychain",
+                    "module-revision": "2016-03-16"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-ssh-server",
+              "revision": "2016-07-08",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-ssh-server",
+              "prefix": "sshs",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-system-keychain",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-supa-policydatamodel",
+              "revision": "2016-04-15",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-supa-policydatamodel",
+              "prefix": "supa-pdm",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-syslog",
+              "revision": "2016-07-08",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-syslog",
+              "prefix": "syslog",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-syslog-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-syslog-types",
+              "revision": "2016-07-08",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-syslog-types",
+              "prefix": "syslogtypes"
+            },
+            {
+              "name": "ietf-system",
+              "revision": "2014-08-06",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-system",
+              "prefix": "sys",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "iana-crypt-hash",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-netconf-acm",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-system-keychain",
+              "revision": "2016-03-16",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-system-keychain",
+              "prefix": "kc",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-system-keychain",
+              "revision": "2016-07-08",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-system-keychain",
+              "prefix": "kc",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-te",
+              "revision": "2016-07-05",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-te",
+              "prefix": "te",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-te-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-te-device",
+              "revision": "2016-07-05",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-te-device",
+              "prefix": "te-dev",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-te",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-te-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-te-mpls",
+              "revision": "2016-07-05",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-te-mpls",
+              "prefix": "te-mpls",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-te",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-te-mpls-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-te-mpls-types",
+              "revision": "2016-07-05",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-te-mpls-types",
+              "prefix": "te-mpls-types",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-mpls",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-te-sr-mpls",
+              "revision": "2016-07-05",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-te-sr-mpls",
+              "prefix": "te-sr-mpls",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-te",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-te-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-te-topology",
+              "revision": "2016-07-08",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-te-topology",
+              "prefix": "tet",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-network",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-network-topology",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-schedule",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-te-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-te-topology-psc",
+              "revision": "2016-07-01",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-te-topology-psc",
+              "prefix": "tet-psc",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-network",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-network-topology",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-te-topology",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-te-types",
+              "revision": "2016-07-05",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-te-types",
+              "prefix": "te-types",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-template",
+              "revision": "2010-05-18",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-template",
+              "prefix": "temp"
+            },
+            {
+              "name": "ietf-template",
+              "revision": "2016-03-20",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-template",
+              "prefix": "temp"
+            },
+            {
+              "name": "ietf-tls-client",
+              "revision": "2016-07-08",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-tls-client",
+              "prefix": "tlsc"
+            },
+            {
+              "name": "ietf-tls-server",
+              "revision": "2016-03-16",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-tls-server",
+              "prefix": "ts",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-system-keychain",
+                    "module-revision": "2016-03-16"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-tls-server",
+              "revision": "2016-07-08",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-tls-server",
+              "prefix": "tlss",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-system-keychain",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-transport-service",
+              "revision": "2016-03-07",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf_transport_service",
+              "prefix": "tser",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-schedule",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-transport-service",
+              "revision": "2016-07-07",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-transport-service",
+              "prefix": "transservice",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-schedule",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-te-topology",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-transport-types",
+              "revision": "2016-06-24",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-transport-types",
+              "prefix": "tran-types"
+            },
+            {
+              "name": "ietf-twamp",
+              "revision": "2016-07-07",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-twamp",
+              "prefix": "ietf-twamp",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-twamp-light",
+              "revision": "2016-06-17",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-twamp-light",
+              "prefix": "ietf-twamp-light",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-vrrp",
+              "revision": "2015-09-28",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-vrrp",
+              "prefix": "vrrp",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-ip",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-vxlan",
+              "revision": "2016-06-02",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-vxlan",
+              "prefix": "vxlan",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-interfaces",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-wson-topology",
+              "revision": "2015-10-14",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-wson-topology",
+              "prefix": "wson",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-network",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-network-topology",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-te-topology",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-x509-cert-to-name",
+              "revision": "2014-12-10",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-x509-cert-to-name",
+              "prefix": "x509c2n",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-yang-library",
+              "revision": "2016-06-21",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-yang-library",
+              "prefix": "yanglib",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-yang-metadata",
+              "revision": "2016-03-21",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-yang-metadata",
+              "prefix": "md"
+            },
+            {
+              "name": "ietf-yang-mpl-domain",
+              "revision": "2016-05-18",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-yang-mpl-domain",
+              "prefix": "mpl",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-yang-mpl-ops",
+              "revision": "2016-05-18",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-yang-mpl-ops",
+              "prefix": "mpl"
+            },
+            {
+              "name": "ietf-yang-mpl-seeds",
+              "revision": "2016-05-18",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-yang-mpl-seeds",
+              "prefix": "mpl"
+            },
+            {
+              "name": "ietf-yang-mpl-statistics",
+              "revision": "2016-05-18",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-yang-mpl-statistics",
+              "prefix": "mpl"
+            },
+            {
+              "name": "ietf-yang-opstate-metadata",
+              "revision": "2016-07-06",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-yang-opstate-metadata",
+              "prefix": "opstate",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-yang-metadata",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-yang-patch",
+              "revision": "2016-07-07",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-yang-patch",
+              "prefix": "ypatch",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-restconf",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-yang-push",
+              "revision": "2016-06-15",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-yang-push",
+              "prefix": "yp",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-5277-netconf",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-event-notifications",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-yang-related-state",
+              "revision": "2016-02-02",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-yang-related-state",
+              "prefix": "yrs"
+            },
+            {
+              "name": "ietf-yang-schema-mount",
+              "revision": "2016-07-01",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-yang-schema-mount",
+              "prefix": "yangmnt",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-yang-library",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-yang-smiv2",
+              "revision": "2012-06-22",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-yang-smiv2",
+              "prefix": "smiv2"
+            },
+            {
+              "name": "ietf-yang-structural-mount",
+              "revision": "2016-02-26",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-yang-structural-mount",
+              "prefix": "yangmnt",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-yang-library",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-yang-types",
+              "revision": "2010-09-24",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-yang-types",
+              "prefix": "yang"
+            },
+            {
+              "name": "ietf-yang-types",
+              "revision": "2013-07-15",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-yang-types",
+              "prefix": "yang"
+            },
+            {
+              "name": "ietf-zerotouch-bootstrap-server",
+              "revision": "2016-07-08",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-zerotouch-bootstrap-server",
+              "prefix": "ztbs",
+              "dependencies": {
+                "required-module": [
+                  {
+                    "module-name": "ietf-inet-types",
+                    "module-revision": "unknown"
+                  },
+                  {
+                    "module-name": "ietf-yang-types",
+                    "module-revision": "unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "ietf-ipfix-application-information",
+              "revision": "2015-04-28",
+              "namespace": "urn:ietf:params:xml:ns:yang:ietf-ipfix-application-information",
+              "prefix": "ipfix-app-info"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
