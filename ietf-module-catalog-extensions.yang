@@ -1,0 +1,85 @@
+module ietf-module-catalog-extensions {
+    namespace "urn:ietf:params:xml:ns:yang:ietf-module-catalog-extensions";
+    prefix modcatext;
+
+    import openconfig-module-catalog {
+        prefix "oc-cat";
+    }
+
+    import openconfig-catalog-types {
+        prefix "oc-cat-types";
+    }
+
+    organization
+      "IETF";
+
+    contact
+      "Carl Moberg <camoberg@cisco.com>";
+
+    description
+      "This module implements IETF-specific extensions to the
+       OpenConfig YANG catalog module";
+
+    revision 2016-11-23 {
+      description
+        "Initial draft";
+      reference
+        "RFC 2026, ";
+    }
+
+    identity ietf-rfc-status {
+        base oc-cat-types:MODULE_CATEGORY_BASE;
+        description
+            "";
+    }
+
+    identity ietf-draft-status {
+        base oc-cat-types:MODULE_CATEGORY_BASE;
+        description
+            "";
+    }
+
+    identity ietf-proposed-standard {
+        base oc-cat-types:MODULE_SUBCATEGORY_BASE;
+        description
+            "This represents the 'Proposed Standard' maturity level
+             for standards track documents as defined in RFC 6410";
+    }
+
+    identity ietf-internet-standard {
+        base oc-cat-types:MODULE_SUBCATEGORY_BASE;
+        description
+            "This represents the 'Internet Standard' maturity level
+             for standards track documents as defined in RFC 6410";
+    }
+
+    identity ietf-experimental {
+        base oc-cat-types:MODULE_SUBCATEGORY_BASE;
+        description
+            "This represents the 'Experimental' designation for
+             non-standards track documents as defined in RFC 2026";
+    }
+
+    identity ietf-informational {
+        base oc-cat-types:MODULE_SUBCATEGORY_BASE;
+        description
+            "This represents the 'Informational' designation for
+             non-standards track documents as defined in RFC 2026";
+    }
+
+    identity ietf-historic {
+        base oc-cat-types:MODULE_SUBCATEGORY_BASE;
+        description
+            "This represents the 'Historic' designation for
+             non-standards track documents as defined in RFC 2026";
+    }
+
+    augment "/oc-cat:organizations/oc-cat:organization/oc-cat:modules/oc-cat:module" {
+        when "../../oc-cat:name = 'ietf'";
+        container ietf-meta {
+            leaf rfc-number {
+                type uint32;
+            }
+        }
+    }    
+}
