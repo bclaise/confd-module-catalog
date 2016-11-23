@@ -191,12 +191,20 @@ module openconfig-module-catalog {
           "MD5 hash of the module file, used by users to validate
           data integrity";
       }
-      leaf access-uri {
+      leaf module-access-uri {
         type inet:uri;
         description
           "URI where module can be downloaded.  Modules may be
           made available from the catalog maintainer, or directly
           from the publisher";
+      }
+      leaf supporting-document-uri {
+        type inet:uri;
+        description
+          "URI where the document that defines the YANG module can
+           be found. This is for situations when the YANG module
+           is published as part of the content of a non-YANG (e.g.
+           plain text or PDF) document.";
       }
     }
   }

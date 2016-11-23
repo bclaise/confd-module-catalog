@@ -4039,6 +4039,31 @@
             }
           ]
         }
+      },
+      {
+        "name": "ieee",
+        "modules": {
+          "module": [
+            {
+              "name": "ethernet-link-oam",
+              "revision": "2015-10-29",
+              "namespace": "urn:ieee:params:xml:ns:yang:ethernet-link-oam",
+              "prefix": "link-oam"                
+            },
+            {
+              "name": "ethernet",
+              "revision": "2015-11-23",
+              "namespace": "urn:ieee:params:xml:ns:yang:ethernet",
+              "prefix": "eth"
+            },
+            {
+              "name": "ieee-ethernet-pon",
+              "revision": "2015-11-27",
+              "namespace": "urn:ieee:params:xml:ns:yang:ieee-ethernet-pon",
+              "prefix": "epon"                
+            }
+          ]
+        }
       }
     ]
   }

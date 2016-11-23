@@ -1,7 +1,7 @@
 # Pull base image.
 FROM debian:latest
 
-ENV CONFD_VER 6.2
+ENV CONFD_VER 6.2.1
 
 # Install Java.
 RUN \
