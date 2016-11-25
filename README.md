@@ -71,8 +71,8 @@ EXPOSE 2024
 Inspect the port mapping using the `docker ps -l` command:
 ```
 $ docker ps -l
-CONTAINER ID        IMAGE               COMMAND                 CREATED             STATUS             PORTS                                                                                               NAMES
-8b0b2d8fd1e8        confd/0.3           "/usr/bin/make start"   23 seconds ago      Up 23 seconds       0.0.0.0:32778->2022/tcp, 0.0.0.0:32777->2024/tcp, 0.0.0.0:32776->8008/tcp, 0.0.0.0:32775->8888/tcp   nauseous_euler
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                                                                                                NAMES
+193d5ab031d5        module-catalog      "/usr/bin/make start_"   7 minutes ago       Up 7 minutes        0.0.0.0:32783->2022/tcp, 0.0.0.0:32782->2024/tcp, 0.0.0.0:32781->8008/tcp, 0.0.0.0:32780->8888/tcp   admiring_mahavira
 ```
 
 In this case, the web UI is available on localhost, ports 32776 (no SSL) and 32775 (SSL). The NETCONF server is available on ports 32778 (SSH) and 32777 (TCP). Running the following command will dump the content of the `organizations` subtree in JSON:
