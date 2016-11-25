@@ -26,6 +26,12 @@ module openconfig-catalog-types {
   // extension statements
   // feature statements
   // identity statements
+
+  identity organization {
+    description
+      "Organization publishing the module";
+  }
+
   identity IMPLEMENTATION_STATUS_TYPE {
     description
       "Indications of the status of a module's implementation on a

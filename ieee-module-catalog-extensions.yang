@@ -1,0 +1,33 @@
+module ieee-module-catalog-extensions {
+    namespace "urn:ieee:params:xml:ns:yang:ieee-module-catalog-extensions";
+    prefix ieeemodcatext;
+
+    import openconfig-module-catalog {
+        prefix "oc-cat";
+    }
+
+    import openconfig-catalog-types {
+        prefix "oc-cat-types";
+    }
+
+    organization
+      "IEEE";
+
+    contact
+      "Carl Moberg <camoberg@cisco.com>";
+
+    description
+      "This module implements IEEE-specific extensions to the
+       OpenConfig YANG catalog module";
+
+    revision 2016-11-23 {
+      description
+        "Initial draft";
+      reference
+        "";
+    }
+
+    identity ieee {
+        base "oc-cat-types:organization";
+    }
+}

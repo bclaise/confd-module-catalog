@@ -273,7 +273,9 @@ module openconfig-module-catalog {
     description
       "Data describing the publisher of the module";
     leaf name {
-      type string;
+      type identityref {
+        base "oc-cat-types:organization";
+      }
       description
         "Name of Organization defining YANG Module:
         Standards Body examples:

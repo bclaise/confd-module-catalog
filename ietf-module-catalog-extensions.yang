@@ -1,6 +1,6 @@
 module ietf-module-catalog-extensions {
     namespace "urn:ietf:params:xml:ns:yang:ietf-module-catalog-extensions";
-    prefix modcatext;
+    prefix ietfmodcatext;
 
     import openconfig-module-catalog {
         prefix "oc-cat";
@@ -25,6 +25,10 @@ module ietf-module-catalog-extensions {
         "Initial draft";
       reference
         "RFC 2026, ";
+    }
+
+    identity ietf {
+        base "oc-cat-types:organization";
     }
 
     identity ietf-rfc-status {

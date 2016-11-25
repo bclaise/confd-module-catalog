@@ -2,7 +2,7 @@
   "openconfig-module-catalog:organizations": {
     "organization": [
       {
-        "name": "ietf",
+        "name": "ietf-module-catalog-extensions:ietf",
         "modules": {
           "module": [
             {
@@ -4041,7 +4041,7 @@
         }
       },
       {
-        "name": "ieee",
+        "name": "ieee-module-catalog-extensions:ieee",
         "modules": {
           "module": [
             {
