@@ -25,7 +25,7 @@ COPY ./Makefile ./*.yang ./confd.conf ./*.xml /tmp/confd-${CONFD_VER}/examples.c
 COPY ./docroot /tmp/confd-${CONFD_VER}/examples.confd/confd-module-catalog/docroot
 WORKDIR /tmp/confd-${CONFD_VER}/examples.confd/confd-module-catalog
 RUN make all
-CMD [ "/usr/bin/make", "start" ]
+CMD [ "/usr/bin/make", "start_foreground" ]
 
 EXPOSE 8888
 EXPOSE 8008

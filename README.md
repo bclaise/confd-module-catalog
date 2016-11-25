@@ -17,10 +17,10 @@ Then use the `Makefile` in this repository to `start`, `stop` ConfD as well as t
 $ make all start
 ```
 
-This should give you a running instance of ConfD with the catalog YANG modules loaded. You can now use the REST interface to query, update and delete data in the catalog. E.g. the following will put some initial data (pulled from the IANA [YANG Parameters](http://www.iana.org/assignments/yang-parameters/yang-parameters.xhtml) repository) into the running server for you to play with:
+This should give you a running instance of ConfD with the catalog YANG modules loaded. You can now use the REST interface to query, update and delete data in the catalog. The `load.sh` script will put some initial data (pulled from the IETF and IEEE repositories) into the running server for you to play with:
 
 ```
-$ curl -u admin:admin -T initial.xml -X POST http://127.0.0.1:8008/api/config/organizations
+$ ./load.sh
 ```
 
 You can now query the server for content, like:
@@ -28,6 +28,13 @@ You can now query the server for content, like:
 ```
 $ curl -u admin:admin http://127.0.0.1:8008/api/config/organizations?deep
 ```
+
+Or the following for JSON:
+
+```
+$ curl -u admin:admin -H "Accept: application/vnd.yang.data+json" http://127.0.0.1:8008/api/config/organizations?deep
+```
+
 
 To stop ConfD and reset the environment (clean the database):
 
@@ -48,7 +55,7 @@ $
 
 Then run the image using `docker run` along the following lines:
 ```
-$ docker run -P -d confd/0.3
+$ docker run -P -d module-catalog
 8b0b2d8fd1e83b36cea148f872a0ab09709db8362e6b4b40a8225a2d98bb090d
 $
 ```
@@ -68,4 +75,9 @@ CONTAINER ID        IMAGE               COMMAND                 CREATED         
 8b0b2d8fd1e8        confd/0.3           "/usr/bin/make start"   23 seconds ago      Up 23 seconds       0.0.0.0:32778->2022/tcp, 0.0.0.0:32777->2024/tcp, 0.0.0.0:32776->8008/tcp, 0.0.0.0:32775->8888/tcp   nauseous_euler
 ```
 
-In this case, the web UI is available on localhost, ports 32776 (no SSL) and 32775 (SSL). The NETCONF server is available on ports 32778 (SSH) and 32777 (TCP).
+In this case, the web UI is available on localhost, ports 32776 (no SSL) and 32775 (SSL). The NETCONF server is available on ports 32778 (SSH) and 32777 (TCP). Running the following command will dump the content of the `organizations` subtree in JSON:
+
+```
+$ curl -u admin:admin -H "Accept: application/vnd.yang.data+json" http://127.0.0.1:32777/api/config/organizations?deep
+```
+
