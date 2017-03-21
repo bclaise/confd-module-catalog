@@ -1,0 +1,56 @@
+module openconfig-implementation-bundle {
+    yang-version "1.1";
+    namespace "http://openconfig.net/yang/implementation-bundle";
+    prefix "oc-implementation";
+
+    import openconfig-module-catalog { prefix oc-cat; }
+    import openconfig-extensions { prefix oc-ext; }
+
+    organization
+      "";
+
+    contact
+      "";
+
+    description
+      "";
+
+    revision 2016-11-05 {
+      description
+        "Initial";
+    }
+
+    oc-ext:openconfig-version "0.0.1";
+
+    augment "/oc-cat:organizations/oc-cat:organization" {
+        list implementation {
+            key "id";
+        
+            description
+                "A list of implementations";
+        
+            leaf id {
+                type string;
+            }
+
+            list module {
+                key "organization name revision";
+                leaf organization {
+                    type leafref {
+                        path "/oc-cat:organizations/oc-cat:organization/oc-cat:name";
+                    }
+                }
+                leaf name {
+                    type leafref {
+                        path "deref(../organization)/../oc-cat:modules/oc-cat:module/oc-cat:name";
+                    }
+                }
+                leaf revision {
+                    type leafref {
+                        path "deref(../name)/../oc-cat:revision";
+                    }
+                }
+            }
+        }
+    }
+}
