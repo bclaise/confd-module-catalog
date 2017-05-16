@@ -63,7 +63,7 @@ module openconfig-release-bundle {
 
     leaf version {
       type string {
-        pattern "[0-9]+\.[0-9]+\.[0-9]+";
+        pattern "[0-9]+[.][0-9]+[.][0-9]+";
       }
       description
         "A semantic version number for the overall bundle. This
@@ -108,7 +108,7 @@ module openconfig-release-bundle {
 
         leaf-list compatible-versions {
           type string {
-            pattern "[0-9\*]+\.[0-9\*]+\.[0-9\*]+";
+            pattern "[0-9*]+[.][0-9*]+[.][0-9*]+";
           }
           description
             "A list of semantic version specification of the versions

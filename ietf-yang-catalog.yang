@@ -1,0 +1,130 @@
+module ietf-yang-catalog {
+  namespace "urn:foo:yangcatalog";
+  prefix iyc;
+
+  import ietf-yang-library {
+    prefix yanglib;
+  }
+
+  organization
+    "";
+  contact
+    "";
+  description
+    "";
+
+  revision 2017-03-24 {
+    description
+      "";
+    reference "";
+  }
+
+  container catalog {
+    description
+      "";
+    list implementations {
+      key "platform os feature-set os-version";
+      description
+        "";
+      leaf platform {
+        type string;
+        description
+          "";
+      }
+      leaf os {
+        type string;
+        description
+          "";
+      }
+      leaf feature-set {
+        type string;
+        description
+          "";
+      }
+      leaf os-version {
+        type string;
+        description
+          "";
+      }
+      container protocols {
+        description
+          "";
+        container netconf {
+          description
+            "";
+          leaf netconf-version {
+            type string;
+          }
+          leaf-list capabilities {
+            type string;
+          }
+        }
+        container restconf {
+          description
+            "";
+          leaf netconf-version {
+            type string;
+            }
+          leaf-list capabilities {
+            type string;
+          }
+        }
+      }  
+      container modules {
+        uses yanglib:module-list;
+      }
+    }
+  }
+  augment "/catalog/implementations/modules/module" { 
+    leaf draft-name {
+      type string;
+      description
+        "";
+    }
+    leaf author-email {
+      type string;
+      description
+       "";
+    }
+    leaf compilation-status {
+       type string;
+       description
+       "";
+    }
+    leaf compilation-result {
+       type string;
+       description
+       "";
+    }
+    leaf reference {
+       type string;
+       description
+       "";
+    }
+    leaf prefix {
+       type string;
+       description
+       "";
+    }
+    leaf yang-version {
+       type string;
+       description
+       "";
+    }
+    leaf organization {
+       type string;
+       description
+       "";
+    }
+    leaf description {
+       type string;
+       description
+       "";
+    }
+    leaf contact {
+       type string;
+       description
+       "";
+    }
+  }
+}

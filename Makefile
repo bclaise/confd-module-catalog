@@ -12,10 +12,10 @@ $(CONFD_DIR)/src/confd/build/include.mk:
 	@echo 'Where is ConfD installed? Set $$CONFD_DIR to point it out!'
 	@echo ''
 
-CONFD_FLAGS = --addloadpath $(CONFD_DIR)/etc/confd 
+CONFD_FLAGS = --addloadpath $(CONFD_DIR)/etc/confd
 START_FLAGS ?=
 
-all: openconfig-catalog-types.fxs openconfig-extensions.fxs openconfig-feature-bundle.fxs openconfig-module-catalog.fxs openconfig-release-bundle.fxs ietf-module-catalog-extensions.fxs ieee-module-catalog-extensions.fxs $(CDB_DIR) ssh-keydir
+all: openconfig-catalog-types.fxs ietf-yang-library.fxs ietf-yang-types.fxs ietf-inet-types.fxs ietf-yang-catalog.fxs openconfig-extensions.fxs openconfig-feature-bundle.fxs openconfig-module-catalog.fxs openconfig-release-bundle.fxs ietf-module-catalog-extensions.fxs ieee-module-catalog-extensions.fxs $(CDB_DIR) ssh-keydir
 	cp yangcatalog_*_init.xml $(CDB_DIR)/
 	@echo "Build complete"
 
