@@ -23,15 +23,15 @@ module ietf-yang-catalog {
     description
       "";
     list implementations {
-      key "platform os feature-set os-version";
+      key "vendor os-type feature-set os-version platform";
       description
         "";
-      leaf platform {
+      leaf vendor {
         type string;
         description
           "";
       }
-      leaf os {
+      leaf os-type {
         type string;
         description
           "";
@@ -42,6 +42,11 @@ module ietf-yang-catalog {
           "";
       }
       leaf os-version {
+        type string;
+        description
+          "";
+      }
+      leaf platform {
         type string;
         description
           "";
